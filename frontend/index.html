@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="logo-section">
+            <img src="icon.png" alt="Logo" class="logo">
+        </div>
+        <div class="main-container">
+            <!-- Dashboard Section - Now on the left -->
+            <div class="dashboard-container">
+                <div id="dashboard" class="dashboard-section">
+                    <h3>Live Statistiken</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number" id="totalUrls">-</span>
+                            <span class="stat-label">URLs erstellt</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" id="totalClicks">-</span>
+                            <span class="stat-label">Gesamt Klicks</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" id="uniqueVisitors">-</span>
+                            <span class="stat-label">Eindeutige Besucher</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" id="activeUrls">-</span>
+                            <span class="stat-label">Aktive URLs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- URL Input Section - Now on the right -->
+            <div class="url-container">
+                <div class="header">
+                    <h1>URL Shortener</h1>
+                    <p class="subtitle">Verwandeln Sie lange URLs in kurze, teilbare Links</p>
+                </div>
+                
+                <form id="shortenForm">
+                    <div class="form-group">
+                        <div class="input-container">
+                            <label for="url">URL eingeben:</label>
+                            <input type="url" id="url" name="url" placeholder="https://example.com/very-long-url" required>
+                        </div>
+                    </div>
+                    <button type="submit">URL kürzen</button>
+                </form>
+                
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
