@@ -1,10 +1,12 @@
-# 🚀 Serverless URL Shortener - AWS CDK & Go
+# Serverless URL Shortener - AWS CDK & Go
 
 A production-ready serverless URL shortener built with **AWS CDK (TypeScript)** and **Go Lambda functions**, showcasing modern cloud architecture patterns and best practices.
 
 ![Architecture](docs/architecture/aws_serverless_architecture.png)
 
-## 🎯 Project Overview
+<img src="docs/architecture/aws_serverless_architecture.png" width=200px height=200px>
+
+## Project Overview
 
 This project demonstrates a **fully serverless URL shortening service** built with:
 - **Infrastructure as Code**: AWS CDK (TypeScript) for reproducible deployments
@@ -14,9 +16,9 @@ This project demonstrates a **fully serverless URL shortening service** built wi
 - **CDN**: CloudFront for global content delivery
 - **Monitoring**: Enhanced CloudWatch dashboards and alerts
 
-### 🎥 [Live Demo](https://url-shortener.vibtellect.de) | 📊 [Cost Analysis](Blog/COST_OPTIMIZATION.md) | 🚀 [Deployment Guide](Blog/DEPLOYMENT_GUIDE.md)
+### [Live Demo](https://url-shortener.vibtellect.de)
 
-## 🏗️ Architecture Highlights
+## Architecture Highlights
 
 - **100% Serverless**: No servers to manage, automatic scaling
 - **Global CDN**: Sub-100ms response times worldwide
@@ -24,7 +26,7 @@ This project demonstrates a **fully serverless URL shortening service** built wi
 - **High Availability**: Multi-AZ deployment with automatic failover
 - **Security**: HTTPS-only, IAM least-privilege access
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -64,19 +66,19 @@ After deployment, CDK will output:
 - **Frontend URL**: Access your URL shortener web interface
 - **API Endpoint**: Direct API access for programmatic usage
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
-├── cdk/                    # AWS CDK infrastructure
+├── cdk/                   # AWS CDK infrastructure
 │   ├── lib/               # CDK constructs and stacks
-│   ├── go/                # Go Lambda functions
 │   └── bin/cdk.ts         # CDK entry point
 ├── frontend/              # Static web frontend
+├── go/                    # Go Lambda functions
 ├── docs/                  # Documentation & guides
 └── README.md
 ```
 
-## 🛠️ Development
+## Development
 
 ### Local Development
 
@@ -102,7 +104,7 @@ go test ./...
 - **X-Ray Tracing**: Distributed tracing for performance analysis
 - **Custom Alarms**: Error rate and latency monitoring
 
-## 💰 Cost Optimization
+## Cost Optimization
 
 This project implements several cost optimization strategies:
 - **Lambda Graviton2**: 20% better price-performance
@@ -112,7 +114,7 @@ This project implements several cost optimization strategies:
 
 See [Cost Optimization Guide](docs/COST_OPTIMIZATION.md) for detailed breakdown.
 
-## 📚 Documentation
+## Documentation
 
 - [Deployment Guide](docs/DEPLOYMENT_GUIDE.md) - Step-by-step deployment instructions
 - [Architecture Deep Dive](docs/architecture/) - Detailed architecture documentation
@@ -137,7 +139,7 @@ export ENVIRONMENT=production
 3. **User Management**: Add Cognito for user authentication
 4. **Rate Limiting**: Implement API Gateway usage plans
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -149,7 +151,7 @@ cd cdk/go
 go test -v ./...
 ```
 
-## 🚀 Deployment Pipeline
+## Deployment Pipeline
 
 Set up CI/CD with GitHub Actions:
 
@@ -161,7 +163,7 @@ on:
     branches: [main]
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -169,10 +171,10 @@ on:
 4. Add tests
 5. Submit a pull request
 
-## 📄 License
+## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License
 
 ---
 
-**Built with ❤️ using AWS CDK, Go, and serverless architecture patterns**
+**Built with AWS CDK, Go, and serverless architecture patterns**
