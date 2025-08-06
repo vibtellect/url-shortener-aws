@@ -2,9 +2,7 @@
 
 A production-ready serverless URL shortener built with **AWS CDK (TypeScript)** and **Go Lambda functions**, showcasing modern cloud architecture patterns and best practices.
 
-![Architecture](docs/architecture/aws_serverless_architecture.png)
-
-<img src="docs/architecture/aws_serverless_architecture.png" width=200px height=200px>
+<img src="docs/architecture/aws_serverless_architecture.png" width=50% height=50%>
 
 ## Project Overview
 
